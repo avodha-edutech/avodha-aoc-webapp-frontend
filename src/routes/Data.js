@@ -91,24 +91,23 @@ const Data = () => {
             </div>
 
             <div className={(divTwo)&&divTwo ? 'p-4':'hidden-element'}>
-                {
-                    (fulldata)&&fulldata.map((value,index) => {
-                        return(
-                            <>
-                            <h1 className='text-center p-2'>{value.aocCode + " : " + value.aocAddress}</h1>
-                                <div className='table-responsive'>
-                                    <Table striped bordered hover variant="dark">
-                                        <thead>
-                                            <tr>
-                                            <th>AOC Code</th>
-                                            <th>Address</th>
-                                            <th>Batch Start Date</th>
-                                            <th>Course Name</th>
-                                            <th>Vacant Seat</th>
-                                            <th>Batch Time</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
+                <div className='table-responsive'>
+                    <Table striped bordered hover variant="dark">
+                        <thead>
+                            <tr>
+                            <th>AOC Code</th>
+                            <th>Address</th>
+                            <th>Batch Start Date</th>
+                            <th>Course Name</th>
+                            <th>Vacant Seat</th>
+                            <th>Batch Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                (fulldata)&&fulldata.map((value,index) => {
+                                    return(
+                                        <>
                                             <tr>
                                             <td>{value.aocCode}</td>
                                             <td>{value.aocAddress}</td>
@@ -117,13 +116,13 @@ const Data = () => {
                                             <td>{value.aocSeat}</td>
                                             <td>{value.aocBatch}</td>
                                             </tr>
-                                        </tbody>
-                                    </Table>
-                                </div>
-                            </>
-                        )
-                    })
-                }
+                                        </>
+                                    )
+                                })
+                            }
+                            </tbody>
+                        </Table>
+                    </div>
                 <div className='d-flex justify-content-center align-items-center mx-auto p-2'>
                     <button className='refresh' onClick={backFun}>Back</button>
                 </div>
