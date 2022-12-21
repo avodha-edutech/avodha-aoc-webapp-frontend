@@ -90,8 +90,9 @@ const Data = () => {
                 </div>
             </div>
 
-            <div className={(divTwo)&&divTwo ? 'p-4':'hidden-element'}>
-                <div className='table-responsive'>
+            <div className={(divTwo)&&divTwo ? 'p-4 ani mt-4':'hidden-element'}>
+                <h1 className='text-center'>(district)&&district</h1>
+                <div className='table-responsive mt-2'>
                     <Table striped bordered hover variant="dark">
                         <thead>
                             <tr>
