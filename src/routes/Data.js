@@ -98,7 +98,7 @@ const Data = () => {
                                             <tr>
                                             <th>AOC Code</th>
                                             <th>Address</th>
-                                            <th>Language</th>
+                                            <th>Batch Start Date</th>
                                             <th>Course Name</th>
                                             <th>Vacant Seat</th>
                                             <th>District</th>
