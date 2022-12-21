@@ -24,7 +24,7 @@ const Data = () => {
             var postData = {
                 district: (district)&&district
             }
-            axios.post('http://api.aoc.avodha.org/api/v1/data',(postData)).then((res) => {
+            axios.post('https://api.aoc.avodha.org/api/v1/data',(postData)).then((res) => {
                 var rawData = res.data;
                 if(rawData.length > 0)
                 {
