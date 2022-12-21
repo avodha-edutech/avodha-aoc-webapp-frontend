@@ -1,0 +1,199 @@
+body
+{
+    background: url(../assets/bg.png) center center fixed no-repeat;
+    background-size: cover;
+}
+
+.district-selector
+{
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.122);
+    padding: 20px;
+    border: 2px solid #8AF9F9;
+    border-radius: 20px;
+    color: #00F3FF;
+    font-family: Poppins;
+}
+
+.refresh
+{
+    background: transparent;
+    color: white;
+    font-family: Poppins;
+    border-radius: 8px;
+    border: 2px solid #00F3FF;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.dropdown-toggle
+{
+    background: transparent;
+    color: white;
+    font-family: Poppins;
+    border: 2px solid #00F3FF;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+h2
+{
+    color: #00F3FF;
+    margin-top: 200px;
+    font-family: Poppins;
+}
+
+h1
+{
+    color: #00F3FF;
+    font-family: Poppins;
+}
+
+table
+{
+  font-family: Poppins;
+}
+
+.dropdown-toggle:hover
+{
+    background: transparent;
+    transform: scale(1.1);
+    border: 2px solid #00F3FF;
+}
+
+.dropdown-toggle:active
+{
+    background: #00f2ff29 !important;
+    transform: scale(1.1);
+    border: 2px solid #00F3FF;
+}
+
+.dropdown-toggle:focus
+{
+    background: #00f2ff29 !important;
+    transform: scale(1.1);
+    border: 2px solid #00F3FF;
+}
+
+.refresh:hover
+{
+    background: transparent;
+    transform: scale(1.1);
+    border: 2px solid #00F3FF;
+}
+
+.refresh:active
+{
+    background: #00f2ff29 !important;
+    transform: scale(1.1);
+    border: 2px solid #00F3FF;
+}
+
+.refresh:focus
+{
+    background: #00f2ff29 !important;
+    transform: scale(1.1);
+    border: 2px solid #00F3FF;
+}
+
+.dropdown-menu
+{
+    text-align: center;
+}
+
+.hidden-element
+{
+    display: none;
+}
+
+.ani
+{
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0%;
+  } to
+  {
+    opacity: 100%;
+  }
+}
+
+.loader {
+    margin-top: 300px !important;
+    color: #ffffff;
+    font-size: 10px;
+    margin: 100px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  @-webkit-keyframes load4 {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  @keyframes load4 {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  
