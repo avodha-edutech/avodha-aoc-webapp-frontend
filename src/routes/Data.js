@@ -81,6 +81,10 @@ const Data = () => {
                             <Dropdown.Item onClick={(event) => {setDistrict('Wayanad')}}>Wayanad</Dropdown.Item>
                             <Dropdown.Item onClick={(event) => {setDistrict('Kannur')}}>Kannur</Dropdown.Item>
                             <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Kasaragod</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Bangalore</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Chennai</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Hyderabad</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Mumbai</Dropdown.Item>
                         </DropdownButton>
                     </div>
                 </div>
@@ -101,7 +105,6 @@ const Data = () => {
                                             <th>Batch Start Date</th>
                                             <th>Course Name</th>
                                             <th>Vacant Seat</th>
-                                            <th>District</th>
                                             <th>Batch Time</th>
                                             </tr>
                                         </thead>
@@ -112,7 +115,6 @@ const Data = () => {
                                             <td>{value.aocLanguage}</td>
                                             <td>{value.aocCourse}</td>
                                             <td>{value.aocSeat}</td>
-                                            <td>{value.aocDistrict}</td>
                                             <td>{value.aocBatch}</td>
                                             </tr>
                                         </tbody>
