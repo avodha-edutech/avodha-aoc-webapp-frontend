@@ -81,10 +81,10 @@ const Data = () => {
                             <Dropdown.Item onClick={(event) => {setDistrict('Wayanad')}}>Wayanad</Dropdown.Item>
                             <Dropdown.Item onClick={(event) => {setDistrict('Kannur')}}>Kannur</Dropdown.Item>
                             <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Kasaragod</Dropdown.Item>
-                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Bangalore</Dropdown.Item>
-                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Chennai</Dropdown.Item>
-                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Hyderabad</Dropdown.Item>
-                            <Dropdown.Item onClick={(event) => {setDistrict('Kasaragod')}}>Mumbai</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Bangalore')}}>Bangalore</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Chennai')}}>Chennai</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Hyderabad')}}>Hyderabad</Dropdown.Item>
+                            <Dropdown.Item onClick={(event) => {setDistrict('Mumbai')}}>Mumbai</Dropdown.Item>
                         </DropdownButton>
                     </div>
                 </div>
