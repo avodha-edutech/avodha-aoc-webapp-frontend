@@ -14,15 +14,18 @@ const Data = () => {
     const [message, setMessage] = useState(null);
     const [msgSts, setMsgsts] = useState(false);
     const [divTwo,setDivTwo] = useState(false);
+    const [coursename, setCourseName] = useState(null);
+    const [btntitle, setBtntitle] = useState("Select");
 
     useEffect(() => {
-        if((district)&&district != null)
+        if((district)&&district != null && (coursename)&&coursename != null)
         {
             setLoading(true);
             setDivone(false);
 
             var postData = {
-                district: (district)&&district
+                district: (district)&&district,
+                course: (coursename)&&coursename
             }
             axios.post('https://avodha.net/api/v1/data',(postData)).then((res) => {
                 var rawData = res.data;
@@ -64,8 +67,20 @@ const Data = () => {
         <div className={(loading)&&loading ? 'loader':'hidden-element'}></div>
             <div className={(divone)&&divone ? 'd-flex justify-content-center align-items-center mx-auto p-4' : 'hidden-element'}>
                 <div className='district-selector'>
-                    <h1>Select your district</h1>
-                    <div className='d-flex justify-content-center align-items-center mx-auto p-2 mt-4'>
+                    <h1>Select your Course</h1>
+                        <div className='d-flex justify-content-center align-items-center mx-auto p-2 mt-2'>
+                            <DropdownButton id="dropdown-basic-button" title={(btntitle)&&btntitle}>
+                                <Dropdown.Item onClick={(event) => {setCourseName('Medical Coding'); setBtntitle('Medical Coding')}}>Medical Coding</Dropdown.Item>
+                                <Dropdown.Item onClick={(event) => {setCourseName('MERN Stack'); setBtntitle('MERN Stack')}}>MERN Stack</Dropdown.Item>
+                                <Dropdown.Item onClick={(event) => {setCourseName('Learning Android'); setBtntitle('Learning Android')}}>Learning Android</Dropdown.Item>
+                                <Dropdown.Item onClick={(event) => {setCourseName('Python and Django'); setBtntitle('Python and Django')}}>Python and Django</Dropdown.Item>
+                                <Dropdown.Item onClick={(event) => {setCourseName('Flutter Development'); setBtntitle('Flutter Development')}}>Flutter Development</Dropdown.Item>
+                                <Dropdown.Item onClick={(event) => {setCourseName('UI and UX Design'); setBtntitle('UI and UX Design')}}>UI and UX Design</Dropdown.Item>
+                                <Dropdown.Item onClick={(event) => {setCourseName('.NET'); setBtntitle('.NET')}}>.NET</Dropdown.Item>
+                            </DropdownButton>
+                        </div>
+                    <h1 className='mt-4'>Select your district</h1>
+                    <div className='d-flex justify-content-center align-items-center mx-auto p-2 mt-2'>
                         <DropdownButton id="dropdown-basic-button" title="Select">
                             <Dropdown.Item onClick={(event) => {setDistrict('Trivandrum')}}>Trivandrum</Dropdown.Item>
                             <Dropdown.Item onClick={(event) => {setDistrict('Kollam')}}>Kollam</Dropdown.Item>
@@ -91,7 +106,7 @@ const Data = () => {
             </div>
 
             <div className={(divTwo)&&divTwo ? 'p-4 ani mt-4':'hidden-element'}>
-                <h1 className='text-center'>{(district)&&district}</h1>
+                <h1 className='text-center'>{(coursename)&&coursename + " in "}{(district)&&district}</h1>
                 <div className='table-responsive mt-4'>
                     <Table striped bordered hover variant="dark">
                         <thead>
@@ -99,7 +114,6 @@ const Data = () => {
                             <th>AOC Code</th>
                             <th>Address</th>
                             <th>Batch Start Date</th>
-                            <th>Course Name</th>
                             <th>Vacant Seat</th>
                             <th>Batch Time</th>
                             </tr>
@@ -113,7 +127,6 @@ const Data = () => {
                                             <td>{value.aocCode}</td>
                                             <td>{value.aocAddress}</td>
                                             <td>{value.aocLanguage}</td>
-                                            <td>{value.aocCourse}</td>
                                             <td>{value.aocSeat}</td>
                                             <td>{value.aocBatch}</td>
                                             </tr>
