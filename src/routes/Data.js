@@ -126,7 +126,7 @@ const Data = () => {
                                             <tr>
                                             <td>{value.aocCode}</td>
                                             <td>{value.aocAddress}</td>
-                                            <td>{value.aocLanguage}</td>
+                                            <td>{value.aocBatchDate}</td>
                                             <td>{value.aocSeat}</td>
                                             <td>{value.aocBatch}</td>
                                             </tr>
